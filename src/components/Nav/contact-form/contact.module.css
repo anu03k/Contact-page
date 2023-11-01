@@ -32,7 +32,7 @@
 .form_control input {
     /* margin-bottom: 30px; */
     height: 40px;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .form_control label {
@@ -46,4 +46,9 @@
 .contact_img img {
     height: 70vh;
     width: 90%
+}
+
+.form_control textarea {
+    height: 40px;
+    font-size: 16px;
 }

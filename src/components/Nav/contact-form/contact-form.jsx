@@ -1,19 +1,36 @@
 import { AiFillAliwangwang } from "react-icons/ai";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import {BiMailSend} from "react-icons/bi";
+import {useState} from 'react'
 
 
 
 import styles from "./contact.module.css";
 import Button from "../button/button";
+
 const ContactForm = () => {
+    const [name,setName]=useState('Anuja');
+    const [email, setMail]=useState();
+const  [message,setMsg]=useState();
+
+  
+  
+
    const onViaMail = ()=>{
     console.log("from Mail");
    }
-   const OnSubmit =(event)=>{
-    console.log(event);
 
-   }
+
+   const OnSubmit =(event)=>{
+    event.preventDefault();
+   
+    setName(event.target[0].value);
+    setMail(event.target[1].value);
+    setMsg (event.target[2].value);
+
+    
+
+   };
     
 
 
@@ -62,7 +79,8 @@ const ContactForm = () => {
                 <Button  text='SUBMIT' /></div>
 
                 
-                
+                <div> { name + " " + email +" " +message}</div>
+
 
 
                 
