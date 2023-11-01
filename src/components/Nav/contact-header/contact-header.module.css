@@ -1,0 +1,15 @@
+.contact_section h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    max-width: 70%;
+}
+
+.contact_section p {
+    font-family: 'Agbalumo', cursive;
+    font-weight: 200;
+    font-size: larger;
+    color: var(--primary-color);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@500&family=Playfair+Display:ital,wght@1,500&family=Quicksand:wght@500&display=swap');
